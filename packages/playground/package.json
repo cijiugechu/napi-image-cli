@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "print": "core-cli --name haha --age 40"
+    "print": "napi-image original"
   },
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "core": "workspace:*"
+    "napi-image-cli": "workspace:*"
   },
   "license": "ISC"
 }

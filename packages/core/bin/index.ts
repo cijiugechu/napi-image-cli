@@ -1,7 +1,22 @@
 #!/usr/bin/env node
 
-import { join } from '../index'
+import minimist from 'minimist'
+import { main } from '../src'
+import type { Config } from '../src/type'
 
-const argv = process.argv.slice(2)
+const arglist = process.argv.slice(2)
 
-console.log(join(argv))
+const args = minimist(arglist)
+
+const parseArgs = (args: minimist.ParsedArgs) => {
+  const { _: entry } = args
+
+  return {
+    ...args,
+    entry,
+  } as Config
+}
+
+console.log(parseArgs(args))
+
+main(parseArgs(args))

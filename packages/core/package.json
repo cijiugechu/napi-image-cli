@@ -1,26 +1,38 @@
 {
-  "name": "core",
+  "name": "napi-image-cli",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "main": "dist/src/index.cjs",
+  "module": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+    "require": "./dist/src/index.cjs",
+    "import": "./dist/src/index.js"
   },
   "bin": {
-    "core-cli": "dist/bin/index.js"
+    "napi-image": "dist/bin/index.cjs"
   },
   "scripts": {
-    "build-fast": "tsup index.ts bin/index.ts --format cjs,esm --dts",
+    "build-fast": "tsup src bin --format cjs,esm --dts --clean",
     "build": "pnpm run build-fast -- --dts-resolve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "napi-image",
+    "image",
+    "cli",
+    "compress",
+    "optimization"
+  ],
+  "author": "nemurubaka",
+  "license": "MIT",
   "devDependencies": {
+    "@types/minimist": "^1.2.2",
     "@types/node": "^18.11.18",
     "tsup": "^6.5.0"
+  },
+  "dependencies": {
+    "@napi-rs/image": "^1.4.4",
+    "minimist": "^1.2.7"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "ts-lib-starter",
+  "name": "napi-image-cli-monorepo",
   "version": "0.0.0",
   "author": "nemurubaka",
   "private": true,
@@ -26,7 +26,7 @@
   "bugs": "https://github.com/jufuku-haijo/ts-lib-starter/issues",
   "scripts": {
     "format": "prettier --write . --ignore-unkown",
-    "build": "pnpm --filter core run build",
+    "build": "pnpm --filter napi-image-cli run build",
     "test": "vitest",
     "test:watch": "vitest -w",
     "prepublishOnly": "pnpm run build"
