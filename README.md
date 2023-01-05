@@ -1,9 +1,6 @@
-# ts-lib-starter
+# napi-image-cli
 
-## Using this template
-
-- Search `ts-lib-starter` and replace it with your custom package name.
-- Search `nemurubaka` and replace it with your name.
+An efficient cli tool that helps you compress and convert images, powered by [@napi-rs/image](https://github.com/Brooooooklyn/Image)
 
 ## License
 
