@@ -10,6 +10,9 @@
     "require": "./dist/src/index.cjs",
     "import": "./dist/src/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "bin": {
     "napi-image": "dist/bin/index.cjs"
   },
