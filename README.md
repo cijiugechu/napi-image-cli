@@ -27,12 +27,12 @@ npm run image
 
 ## Options
 
-| flag   |  description   |
-| :--    | :--            |
-| --type [type] | specify type, `lossy` or `lossless` |
-| --quality [quality] |  specify quality, ranges from 0 to 100 and controls the loss and quality during compression |
-| --mode [mode] | specify mode, `compat` mode means compatibility with browsers that don't support `avif`, i.e. transforming `avif` to `jpg` ; `modern` mode will transform all the formats to `avif`; `lazy` mode will do nothing about format transforming. |
-| --outDir [outDir] | specify Specify the output directory (relative to project root).
+| flag   |   default   | description   |
+| :--    | :--    | :--       |
+| --type [type] |   `lossless`  | specify type, `lossy` or `lossless` |
+| --quality [quality] |   75  | specify quality, ranges from 0 to 100 and controls the loss and quality during compression |
+| --mode [mode] |  `lazy`   | specify mode, `compat` mode means compatibility with browsers that don't support `avif`, i.e. transforming `avif` to `jpg` ; `modern` mode will transform all the formats to `avif`; `lazy` mode will do nothing about format transforming. |
+| --outDir [outDir] |  `dist/assets`   |   specify Specify the output directory (relative to project root).
 
 ## License
 
