@@ -17,6 +17,4 @@ const parseArgs = (args: minimist.ParsedArgs) => {
   } as Config
 }
 
-console.log(parseArgs(args))
-
 main(parseArgs(args))
