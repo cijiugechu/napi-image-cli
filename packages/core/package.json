@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/minimist": "^1.2.2",
     "@types/node": "^18.11.18",
-    "tsup": "^6.5.0"
+    "tsup": "^7.0.0"
   },
   "dependencies": {
     "@napi-rs/image": "^1.4.4",
